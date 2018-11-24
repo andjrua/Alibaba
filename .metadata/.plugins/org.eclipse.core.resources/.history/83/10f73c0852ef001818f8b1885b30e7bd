@@ -1,0 +1,9 @@
+package com.sophossolutions.certification.alibaba.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class AlibabaProductPage {
+
+	public static final Target PRODUCT_CONTACT = Target.the("Product Contact").located(By.className("ui2-button"));
+}

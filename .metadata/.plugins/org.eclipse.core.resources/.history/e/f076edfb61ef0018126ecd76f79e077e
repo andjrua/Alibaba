@@ -1,0 +1,5 @@
+package com.sophossolutions.certification.alibaba.models.build;
+
+public class DetailBuild {
+
+}

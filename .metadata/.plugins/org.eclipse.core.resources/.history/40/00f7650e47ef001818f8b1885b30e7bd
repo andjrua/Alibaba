@@ -1,0 +1,17 @@
+package com.sophossolutions.certification.alibaba.models;
+
+public class SearchExpressions {
+
+	private String word;
+
+	public SearchExpressions(String word) {
+		this.word = word;
+	}
+
+	public String getWord() {
+		return word;
+	}
+	
+	
+	
+}

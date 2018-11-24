@@ -1,0 +1,35 @@
+package com.sophossolutions.certification.alibaba.tasks;
+
+import com.sophossolutions.certification.alibaba.userinterfaces.AlibabaProductPage;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.actions.Click;
+
+/*
+ * Task to get contact with the provider
+ */
+public class MakeContact implements Task{
+	
+	public MakeContact() {
+		
+	}
+	
+	/*
+	 * (non-Javadoc)
+	 * @see net.serenitybdd.screenplay.Performable#performAs(net.serenitybdd.screenplay.Actor)
+	 */
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		//action to click on contact button and insert requirements to the provider
+		actor.attemptsTo(Click.on(AlibabaProductPage.PRODUCT_CONTACT));
+	}
+	
+	public static Performable with() {
+		// TODO Auto-generated method stub
+		return Tasks.instrumented(MakeContact.class);
+	}
+
+}

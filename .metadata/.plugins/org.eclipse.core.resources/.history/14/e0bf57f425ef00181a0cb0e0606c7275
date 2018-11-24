@@ -1,0 +1,19 @@
+package com.sophossolutions.certification.alibaba.userinterfaces;
+
+import java.util.List;
+
+//import net.serenitybdd.core.annotations.findby.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+import net.serenitybdd.screenplay.actions.WebElementLocator;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class AlibabaSearchPage {
+	
+	
+
+	@SuppressWarnings("unchecked")
+	public List<WebElement> PRODUCT = (List<WebElement>) By.className("offer-image-box");
+	//public static final Target DIAMONDS = Target.the("Diamonts").located(By.className("diamond-level-group"));
+	//public static final Target TARGET_SEARCH_TEXT_AREA = Target.the("Target search text area").located(By.xpath("search"));
+}

@@ -1,0 +1,40 @@
+package com.sophossolutions.certification.alibaba.models;
+
+public class ContactDetail {
+	
+	private int quantity;
+	private String detail;
+	private String email;
+	
+	public ContactDetail(int quantity, String detail, String email) {
+		this.quantity = quantity;
+		this.detail = detail;
+		this.email = email;
+	}
+
+	public String getQuantity(int quantity) {
+		return String.valueOf(quantity);
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
+}

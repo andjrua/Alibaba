@@ -1,0 +1,43 @@
+package com.sophossolutions.certification.alibaba.tasks;
+
+import com.sophossolutions.certification.alibaba.models.ContactDetail;
+import com.sophossolutions.certification.alibaba.userinterfaces.AlibabaContactPage;
+import com.sophossolutions.certification.alibaba.userinterfaces.AlibabaProductPage;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+
+/*
+ * Task to get contact with the provider
+ */
+public class MakeContact implements Task{
+	
+	private ContactDetail detail;
+	
+	public MakeContact(ContactDetail detail) {
+		this.detail = detail;
+	}
+	
+	/*
+	 * (non-Javadoc)
+	 * @see net.serenitybdd.screenplay.Performable#performAs(net.serenitybdd.screenplay.Actor)
+	 */
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		//action to click on contact button and insert requirements to the provider
+		actor.attemptsTo(Click.on(AlibabaProductPage.PRODUCT_CONTACT));
+		actor.attemptsTo(Enter.theValue(String.valueOf(detail.getQuantity())).into(AlibabaContactPage.QUANTITY_AREA));
+		actor.attemptsTo(Enter.theValue(detail.getEmail()).into(AlibabaContactPage.EMAIL_AREA));
+		actor.attemptsTo(Enter.theValue(detail.getDetail()).into(AlibabaContactPage.DETAIL_AREA));
+	}
+	
+	public static Performable with(ContactDetail detail) {
+		// TODO Auto-generated method stub
+		return Tasks.instrumented(MakeContact.class, detail);
+	}
+
+}

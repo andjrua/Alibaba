@@ -1,0 +1,34 @@
+package com.sophossolutions.certification.alibaba.models.build;
+
+import com.sophossolutions.certification.alibaba.models.ContactDetail;
+
+public class DetailBuild implements Builder<ContactDetail> {
+	
+	private String quantity;
+	private String detail;
+	private String email;
+	
+	public DetailBuild(String email) {
+		this.email = email;
+	}
+
+	public static DetailBuild myEmail(String email) {
+		return new DetailBuild(email);
+	}
+	
+	public DetailBuild andAskFor(String detail) {
+		this.detail = detail;
+		return this;
+	}
+	
+	public DetailBuild aQuantityOf(String quantity) {
+		this.quantity = quantity;
+		return this;
+	}
+
+	@Override
+	public ContactDetail build() {
+		return new ContactDetail(quantity, detail, email);
+	}	
+
+}

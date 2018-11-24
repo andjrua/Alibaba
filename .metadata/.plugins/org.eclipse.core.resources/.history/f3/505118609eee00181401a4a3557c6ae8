@@ -1,0 +1,16 @@
+package com.sophossolutions.certification.alibaba.models;
+
+public class SearchDiamonds {
+
+	private String diamonds;
+
+	public SearchDiamonds(String diamonds) {
+		this.diamonds = diamonds;
+	}
+
+	public String getDiamonds() {
+		return diamonds;
+	}
+	
+	
+}

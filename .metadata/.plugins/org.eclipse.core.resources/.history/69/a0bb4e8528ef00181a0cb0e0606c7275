@@ -1,0 +1,33 @@
+package com.sophossolutions.certification.alibaba.tasks;
+
+import java.awt.Frame;
+import java.awt.Window;
+
+import com.sophossolutions.certification.alibaba.models.SearchDiamonds;
+import com.sophossolutions.certification.alibaba.userinterfaces.AlibabaSearchPage;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Switch;
+import net.serenitybdd.screenplay.actions.WebElementLocator;
+
+
+public class FindProduct implements Task{
+
+	public FindProduct() {
+	}
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+
+		actor.attemptsTo(Click.on(AlibabaSearchPage.PRODUCT));
+	}
+
+	public static Performable with() {
+		// TODO Auto-generated method stub
+		return Tasks.instrumented(FindProduct.class);
+	}
+}

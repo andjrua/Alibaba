@@ -1,0 +1,11 @@
+package com.sophossolutions.certification.alibaba.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.screenplay.targets.Target;
+import net.thucydides.core.annotations.DefaultUrl;
+
+@DefaultUrl("https://www.computrabajo.com.co")
+public class AlibabaHomePage extends PageObject{
+
+}

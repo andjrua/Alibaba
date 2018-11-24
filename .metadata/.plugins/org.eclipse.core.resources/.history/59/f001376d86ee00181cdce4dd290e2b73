@@ -1,0 +1,14 @@
+#Author: your.email@your.domain.com
+@tag
+Feature: Alibaba search
+  I want to make a search in alibaba
+
+  @tag1
+  Scenario: Searching a dress with at less three diamonds
+    Given I into Alibaba
+    When I search for an article
+      | product    |
+      | blue dress |
+    And find some with at less three diamonds
+    When contact with supplier
+    Then I validate the outcomes

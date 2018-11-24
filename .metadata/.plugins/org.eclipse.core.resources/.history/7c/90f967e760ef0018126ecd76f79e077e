@@ -1,0 +1,13 @@
+package com.sophossolutions.certification.alibaba.models;
+
+public class ConectMessage {
+	
+	private String quantity;
+	private String detail;
+	
+	public PersonaModel(String quantity, String detail) {
+		this.quantity = quantity;
+		this.detail = detail;
+	}
+	
+}

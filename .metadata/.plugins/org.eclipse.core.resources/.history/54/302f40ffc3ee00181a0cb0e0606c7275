@@ -1,0 +1,11 @@
+package com.sophossolutions.certification.alibaba.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class AlibabaSearchPage {
+
+	public static final Target SOURCE_SEARCH_WORD_AREA = Target.the("Source search text area").located(By.name("SearchText"));
+	public static final Target SOURCE_BUTTON = Target.the("Source button").located(By.className("ui-searchbar-button-icon"));
+	public static final Target TARGET_SEARCH_TEXT_AREA = Target.the("Target search text area").located(By.xpath("search"));
+}

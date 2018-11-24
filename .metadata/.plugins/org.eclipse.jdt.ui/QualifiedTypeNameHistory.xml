@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cucumber.api.java.en.When"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
+<fullyQualifiedTypeName name="net.serenitybdd.screenplay.Task"/>
+<fullyQualifiedTypeName name="com.sophossolutions.certification.alibaba.tasks.SearchWord"/>
+<fullyQualifiedTypeName name="com.sophossolutions.certification.alibaba.userinterfaces.AlibabaSearchPage"/>
+<fullyQualifiedTypeName name="com.sophossolutions.certification.alibaba.userinterfaces.AlibabaHomePage"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="net.thucydides.core.annotations.findby.By"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="net.serenitybdd.screenplay.actions.WebElementLocator"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By.ByClassName"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="java.awt.Frame"/>
+<fullyQualifiedTypeName name="java.awt.Window"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Capabilities"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.SearchContext"/>
+<fullyQualifiedTypeName name="net.serenitybdd.screenplay.actions.Switch"/>
+<fullyQualifiedTypeName name="com.google.common.jimfs.SystemJimfsFileSystemProvider"/>
+<fullyQualifiedTypeName name="net.serenitybdd.screenplay.actions.Click"/>
+<fullyQualifiedTypeName name="com.sophossolutions.certification.alibaba.userinterfaces.AlibabaProductPage"/>
+<fullyQualifiedTypeName name="com.sophossolutions.certification.alibaba.models.build.DetailBuild"/>
+<fullyQualifiedTypeName name="com.sophossolutions.certification.alibaba.models.build.DetailBuilder"/>
+<fullyQualifiedTypeName name="com.sophossolutions.certification.alibaba.models.ContactDetail"/>
+<fullyQualifiedTypeName name="net.serenitybdd.screenplay.actions.Enter"/>
+<fullyQualifiedTypeName name="com.sophossolutions.certification.alibaba.userinterfaces.AlibabaContactPage"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Builder.java&apos; to &apos;Alibaba/src/main/java/com.sophossolutions.certification.alibaba.models.build&apos;&#x0D;&#x0A;- Original project: &apos;ScreenPlay_1&apos;&#x0D;&#x0A;- Destination element: &apos;Alibaba/src/main/java/com.sophossolutions.certification.alibaba.models.build&apos;&#x0D;&#x0A;- Original element: &apos;co.com.bancolombia.screenplay.ejemplo.model.builder.Builder.java&apos;" description="Copy compilation unit" destination="=Alibaba/src\/main\/java&lt;com.sophossolutions.certification.alibaba.models.build" element1="/src\/main\/java&lt;co.com.bancolombia.screenplay.ejemplo.model.builder{Builder.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1543006423859" units="1" version="1.0"/>
+</session>

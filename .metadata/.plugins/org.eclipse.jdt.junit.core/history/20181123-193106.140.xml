@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Alibaba" project="Alibaba" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.sophossolutions.certification.alibaba.runners.AlibabaRunner" time="36.872">
+    <testsuite name="Feature: Alibaba search" time="36.872">
+      <testcase name="Searching a dress with at less three diamonds" classname="Alibaba search" time="36.872"/>
+    </testsuite>
+  </testsuite>
+</testrun>
