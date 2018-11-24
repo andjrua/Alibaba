@@ -1,8 +1,11 @@
 package com.sophossolutions.certification.alibaba.tasks;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+import com.sophossolutions.certification.alibaba.questions.AlibabaPageVisible;
 import com.sophossolutions.certification.alibaba.userinterfaces.AlibabaHomePage;
+import com.sophossolutions.certification.alibaba.exceptions.WithoutConnectionToTheNetwork;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.Actor;
@@ -29,6 +32,13 @@ public class OpenTheBrowser implements Task{
 	public <T extends Actor> void performAs(T actor) {
 		//Open Browser in the page
 		actor.attemptsTo(Open.browserOn().the(page));	
+		actor.should(seeThat(AlibabaPageVisible.isVisible()).orComplainWith(WithoutConnectionToTheNetwork.class,
+				getNoInternetConectionMessage()));
+	}
+	
+	public String getNoInternetConectionMessage() {
+		return String.format(WithoutConnectionToTheNetwork.getErrorNetworkMessage());
+
 	}
 	
 	public static OpenTheBrowser on(AlibabaHomePage page) {
