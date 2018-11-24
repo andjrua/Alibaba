@@ -12,5 +12,5 @@ Feature: Alibaba search
     Then I validate the outcomes
 
     Examples: 
-      | product    | email               | detail             |
-      | blue dress | and-rua@hotmail.com | Have_you_descount? |
+      | product   | email               | detail             |
+      | cellphone | and-rua@hotmail.com | Have_you_descount? |
